@@ -1,38 +1,37 @@
 import 'package:flutter/material.dart';
+import 'screens/home_screen.dart';
+import 'screens/server_list_screen.dart';
+import 'screens/settings_screen.dart';
+import 'screens/about_screen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const ObscurraApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class ObscurraApp extends StatelessWidget {
+  const ObscurraApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        backgroundColor: const Color.fromARGB(255, 168, 199, 212),
-        appBar: AppBar(
-          backgroundColor: const Color.fromARGB(255, 37, 46, 62),
-          title:  Text('Obscura',
-          style:TextStyle(
-            color: Colors.white,
-          ),
-          ),
-          leading: Icon(Icons.menu,
-          color: Colors.white,
-          size: 28,
-          ),
-          actions: [IconButton(onPressed: () {} , icon: Icon(Icons.info),color: Colors.white,)],
+      title: 'Obscurra VPN',
+      theme: ThemeData(
+        primaryColor: const Color(0xFF2C3E50),
+        scaffoldBackgroundColor: const Color(0xFFECF0F1),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color(0xFF34495E),
+          brightness: Brightness.light,
         ),
-        body: Column(
-          children: [
-            
-
-          ],
-        ),
-    ),
+        useMaterial3: true,
+      ),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const HomeScreen(),
+        '/servers': (context) => const ServerListScreen(),
+        '/settings': (context) => const SettingsScreen(),
+        '/about': (context) => const AboutScreen(),
+      },
     );
   }
 }
