@@ -10,7 +10,7 @@ class ServerListScreen extends StatefulWidget {
 
 class _ServerListScreenState extends State<ServerListScreen> {
   final List<ServerModel> servers = [
-    ServerModel(name: 'United States', ping: 25, flag: '🇺🇸'),
+    ServerModel(name: 'United States', ping: 76, flag: '🇺🇸'),
     ServerModel(name: 'United Kingdom', ping: 45, flag: '🇬🇧'),
     ServerModel(name: 'Germany', ping: 38, flag: '🇩🇪'),
     ServerModel(name: 'Japan', ping: 120, flag: '🇯🇵'),
