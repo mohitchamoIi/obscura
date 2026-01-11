@@ -61,7 +61,7 @@ class AboutScreen extends StatelessWidget {
               title: 'WireGuard Protocol',
               description: 'Powered by WireGuard for maximum security and performance',
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: 18),
             _buildInfoCard(
               icon: Icons.speed,
               title: 'Fast & Reliable',
