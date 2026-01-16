@@ -85,14 +85,14 @@ obscura/
 
 Clone the repository:
 
-```bash
+```
 git clone https://github.com/mohitchamoIi/obscura.git
 cd obscura
 ```
 
 Fetch dependencies:
 
-```bash
+```
 flutter pub get
 ```
 
@@ -108,7 +108,7 @@ flutter run
 
 If you have multiple devices/emulators:
 
-```bash
+```
 flutter devices
 flutter run -d <device_id>
 ```
