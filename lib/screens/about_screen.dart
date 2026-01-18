@@ -71,7 +71,7 @@ class AboutScreen extends StatelessWidget {
             _buildInfoCard(
               icon: Icons.privacy_tip,
               title: 'Privacy First',
-              description: 'No logs, no tracking, complete privacy protection',
+              description: 'No logs, no tracking, complete Privacy Protection',
             ),
           ],
         ),
