@@ -10,7 +10,7 @@ class VPNService {
   final String listenPort = '51820';
   final String allowedIPs = '0.0.0.0/0, ::/0';
   
-  // These should be fetched from your Linux WireGuard server
+  // These will be  fetched from your Linux WireGuard server
   String? privateKey;
   String? publicKey;
   String? presharedKey;
